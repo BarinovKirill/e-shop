@@ -20,27 +20,25 @@
          left: 0;
          bottom: -5px;
          height: 2px;
-         width: 0;
+         width: 100%;
          background-color: var(--color-dark);
-         transition: width 0.15s;
+         opacity: 0;
+         transition: opacity 0.15s;
       }
       
       &:hover{
          &::before{
-            width: 100%;
-            transition: width 0.15s;
+            opacity: 1;
+            transition: opacity 0.15s;
          }
       }
       
       &--current{
          &::before{
-            width: 100%;
-            transition: width 0.15s;
+            opacity: 1;
+            transition: opacity 0.15s;
          }
       }
-
-
-      
    }
 }
 .header {
