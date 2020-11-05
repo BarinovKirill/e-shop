@@ -65,7 +65,9 @@ html {
 //   }
   
   .btn-reset {
+    padding: 0;
     border: none;
+    outline: none;
     background: transparent;
     cursor: pointer;
   }
@@ -78,4 +80,28 @@ html {
   
   .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
+  }
+
+  .main-link{
+    position: relative;
+    font-size: 15px;
+
+    &::before{
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: -5px;
+       height: 2px;
+       width: 100%;
+       background-color: var(--color-dark);
+       opacity: 0;
+       transition: opacity 0.15s;
+    }
+    
+    &:hover{
+       &::before{
+          opacity: 1;
+          transition: opacity 0.15s;
+       }
+    }
   }

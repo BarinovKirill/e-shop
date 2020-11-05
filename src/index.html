@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
-  <body>
-    @include('html/header.html')
-    <main class="main">
-      @include('html/hero.html')
-    </main>
-    <!-- @include('html/footer.html') -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+  @include('html/header.html')
+  <main class="main">
+    @include('html/hero.html')
+    @include('html/banners.html')
+    @include('html/main-products.html')
+  </main>
+  <!-- @include('html/footer.html') -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

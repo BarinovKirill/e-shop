@@ -1,0 +1,51 @@
+.banners {
+
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        width: 33%;
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+            margin-right: 0.6%;
+        }
+    }
+
+    &__article {
+    }
+}
+.banners-article {
+    padding: 60px;
+    padding-right: 50%;
+    background-color: #ccc111;
+    min-height: 290px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        font-size: 15px;
+    }
+}
+.banners-article--mid {
+    background-image: url(../../img/mid.jpg);
+}
+.banners-article--summer {
+    background-image: url(../../img/summer.jpg);
+}
+.banners-article--sale {
+    background-image: url(../../img/sale.jpg);
+}

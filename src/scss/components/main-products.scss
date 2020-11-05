@@ -1,0 +1,33 @@
+.main-products {
+
+    &__container {
+        padding-top: 55px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+    &__item {
+        margin: 0px 18px;
+    }
+
+    &__btn {
+        color: var(--color-sub);
+
+        &:hover{
+            color: var(--color-dark);
+        }
+
+        &--current{
+            color: var(--color-dark);
+
+            &::before{
+                opacity: 1;
+                transition: opacity 0.15s;
+             }
+        }
+    }
+}
