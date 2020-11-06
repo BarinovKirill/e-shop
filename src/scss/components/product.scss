@@ -1,6 +1,8 @@
 .product {
+    position: relative;
 
     &__image {
+        margin-bottom: 25px;
         img{
             max-height: 100%;
             object-fit: cover;
@@ -8,8 +10,27 @@
     }
 
     &__title {
+        color: var(--color-sub);
+        font-size: 13px;
+        margin: 0;
+        margin-bottom: 11px;
+        
+        a{
+            &::before{
+
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
     }
 
     &__price {
+        font-size: 13px;
+        font-weight: 700;
     }
 }

@@ -31,3 +31,44 @@
         }
     }
 }
+
+.products-grid{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        margin-right: 30px;
+        margin-bottom: 80px;
+
+
+        &:nth-child(5n){
+            margin-right: 0;
+        }
+
+        &:nth-last-child(-n+5){
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main-products {
+
+    &__btn-center {
+        text-align: center;
+    }
+
+    &__more {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-sub);
+        font-size: 13px;
+
+        svg{
+            height: 21px;
+            width: 12px;
+            fill: var(--color-dark);
+        }
+    }
+}
+
