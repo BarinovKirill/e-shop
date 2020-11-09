@@ -1,4 +1,5 @@
 .main-products {
+    margin-bottom: 100px;
 
     &__container {
         padding-top: 55px;
@@ -63,8 +64,11 @@
         align-items: center;
         color: var(--color-sub);
         font-size: 13px;
+        margin-top: 45px;
 
         svg{
+            display: inline-block;
+            margin-top: 14px;
             height: 21px;
             width: 12px;
             fill: var(--color-dark);

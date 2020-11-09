@@ -1,0 +1,64 @@
+.shop-banners {
+
+    &__container {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__banner {
+
+    }
+}
+.container {
+}
+.shop-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 420px;
+    color: var(--color-white);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-dark);
+    
+
+    &__title {
+        font-size: 48px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 18px;
+        z-index: 5;
+    }
+
+    &__link {
+        font-size: 15px;
+        z-index: 5;
+    }
+}
+.shop-banner--men {
+    background-image: url(../../img/banner-1.jpg);
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: rgba(#d70808, 0.1);
+        z-index: 2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+.shop-banner--women {
+    background-image: url(../../img/banner-2.jpg);
+}
+.main-link {
+}
+.main-link--white {
+}

@@ -85,6 +85,7 @@ html {
   .main-link{
     position: relative;
     font-size: 15px;
+    color: var(--color-dark);
 
     &::before{
        content: "";
@@ -93,7 +94,7 @@ html {
        bottom: -5px;
        height: 2px;
        width: 100%;
-       background-color: var(--color-dark);
+       background-color: currentColor;
        opacity: 0;
        transition: opacity 0.15s;
     }
@@ -103,5 +104,9 @@ html {
           opacity: 1;
           transition: opacity 0.15s;
        }
+    }
+
+    &--white{
+      color: var(--color-white);
     }
   }
