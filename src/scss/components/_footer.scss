@@ -4,12 +4,26 @@
     }
 
     &__content {
-        padding: 100px 260px;
+        padding: 100px  260px 0;
+    }
+
+    &__top {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 100px;
+        border-bottom: 1px solid #eeeeee;
+    }    
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 43px 0px;
     }
 
     &__column {
+        &:nth-child(2){
+            margin-left: -60px;
+        }
     }
 
     &__title {
@@ -42,8 +56,11 @@
 .container {
 }
 .footer-form {
+    width: 646px;
+    margin-bottom: 25px;
 }
 .subscribe-form {
+    position: relative;
 
     &__title {
         margin: 0;
@@ -54,10 +71,106 @@
     }
 
     &__field {
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--color-dark);
+
+        input{
+            width: 100%;
+            padding-right: 80px;
+            border: none;
+            font-size: 13px;
+            font-weight: 500;
+            outline: none;
+            color: rgba(var(--color-dark), 0.5);
+
+            &::placeholder{
+                color: rgba(#454545, 0.5);  
+            }
+        }
     }
 
     &__btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: var(--color-dark);
+        z-index: 2;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 12px;
     }
 }
-.btn-reset {
+
+.footer {
+
+    &__left {
+        
+    }
+
+    &__list {
+        &--row{
+            display: flex;
+            justify-content: center;
+
+            .footer__item{
+                margin-bottom: 0;
+                &:not(:last-child){
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+
+    &__item {
+    }
+
+    &__link--row {
+        color: var(--color-dark);
+        font-size: 13px;
+        font-weight: 700;
+
+    }
+
+    &__right {
+    }
+}
+.social {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+        &:last-child{
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__link--tw {
+        background-image: url(../../img/tw.png);
+    }
+
+    &__link--fb {
+        background-image: url(../../img/fb.png);
+    }
+
+    &__link--in {
+        background-image: url(../../img/in.png);
+    }
+
+    &__link--pin {
+        background-image: url(../../img/pin.png);
+    }
 }
