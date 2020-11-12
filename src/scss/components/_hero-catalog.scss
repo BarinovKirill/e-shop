@@ -7,6 +7,10 @@
     }
     &__container {
     }
+
+    &__slider{
+        position: relative;
+    }
     
 }
 
@@ -21,6 +25,7 @@
 }
 .catalog-slide {
     padding: 110px 108px;
+    position: relative;
 
     &__title {
         margin: 0;
@@ -66,5 +71,17 @@
     &__link--light {
         color: var(--color-dark);
         background-color: transparent;
+    }
+
+    &__img{
+        position: absolute;
+        right: 240px;
+        bottom: 0;
+    }
+
+    &__prev{
+        width: 48px;
+        height: 48px;
+        border: 2px solid var(--color-dark);
     }
 }
