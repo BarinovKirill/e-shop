@@ -3,7 +3,7 @@
 
     &__image {
         margin-bottom: 25px;
-        img{
+        img {
             max-height: 100%;
             object-fit: cover;
         }
@@ -14,10 +14,9 @@
         font-size: 13px;
         margin: 0;
         margin-bottom: 11px;
-        
-        a{
-            &::before{
 
+        a {
+            &::before {
                 position: absolute;
                 content: "";
                 top: 0;
@@ -26,7 +25,6 @@
                 bottom: 0;
             }
         }
-
     }
 
     &__price {

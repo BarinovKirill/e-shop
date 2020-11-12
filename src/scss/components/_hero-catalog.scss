@@ -1,6 +1,6 @@
-.hero-catalog{
+.hero-catalog {
     padding-top: 130px;
-    &__slider{
+    &__slider {
         background-color: #f8f8f8;
         overflow: hidden;
         width: 100%;
@@ -8,19 +8,16 @@
     &__container {
     }
 
-    &__slider{
+    &__slider {
         position: relative;
     }
-    
 }
 
 .swiper {
-
     &-wrapper {
     }
 
     &-slide {
-        
     }
 }
 .catalog-slide {
@@ -34,7 +31,6 @@
         font-size: 36px;
         font-weight: 700;
         max-width: 385px;
-
     }
 
     &__descr {
@@ -48,7 +44,7 @@
 
     &__btns {
         display: flex;
-        &::not(:last-child){
+        &::not(:last-child) {
             margin-right: 15px;
         }
     }
@@ -57,10 +53,9 @@
         padding: 18px 45px;
         font-size: 13px;
         border: 1px solid var(--color-dark);
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 15px;
         }
-
     }
 
     &__link--dark {
@@ -73,13 +68,13 @@
         background-color: transparent;
     }
 
-    &__img{
+    &__img {
         position: absolute;
         right: 240px;
         bottom: 0;
     }
 
-    &__prev{
+    &__prev {
         width: 48px;
         height: 48px;
         border: 2px solid var(--color-dark);

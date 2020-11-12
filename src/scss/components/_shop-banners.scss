@@ -1,5 +1,4 @@
 .shop-banners {
-
     &__container {
         padding: 0;
         display: flex;
@@ -8,7 +7,6 @@
     }
 
     &__banner {
-
     }
 }
 .container {
@@ -25,7 +23,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--color-dark);
-    
 
     &__title {
         font-size: 48px;
@@ -43,8 +40,7 @@
 .shop-banner--men {
     background-image: url(../../img/banner-1.jpg);
 
-
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         background-color: rgba(#d70808, 0.1);

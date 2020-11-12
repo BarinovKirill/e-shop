@@ -1,5 +1,4 @@
 .nav {
-
    &__list {
       display: flex;
    }
@@ -11,9 +10,8 @@
    }
 
    &__link {
-      
-      &--current{
-         &::before{
+      &--current {
+         &::before {
             opacity: 1;
             transition: opacity 0.15s;
          }
@@ -21,7 +19,6 @@
    }
 }
 .header {
-
    // .header__nav
 
    &__nav {

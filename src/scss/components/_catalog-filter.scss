@@ -1,0 +1,126 @@
+.catalog-filters {
+    width: 309px;
+    padding-top: 35px;
+    padding-right: 66px;
+}
+.hide-filters {
+    margin-bottom: 19px;
+    font-size: 10px;
+    font-weight: 700;
+    padding-left: 24px;
+    text-transform: uppercase;
+    background-image: url("../img/cross.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.catalog-filter {
+    padding-top: 29px;
+    padding-bottom: 40px;
+    border-top: 1px solid #eee;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 35px;
+    }
+
+    &__caption {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__quantity {
+        min-width: 16px;
+        margin-left: 5px;
+    }
+
+    &__toggle {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        color: #aaaaaa;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: currentColor;
+            transform: translateX(-50%);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 2px;
+            width: 100%;
+            background-color: currentColor;
+            transform: translateY(-50%);
+        }
+    }
+    &__bottom {
+        display: none;
+        &--open {
+            display: block;
+        }
+    }
+
+    &__items {
+        columns: 2;
+    }
+
+    &__item {
+        margin-bottom: 14px;
+        &:nth-child(5n) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.custom-checkbox {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    &__text {
+        color: #aaa;
+        font-size: 13px;
+        position: relative;
+        padding-left: 15px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 3px;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #aaa;
+        }
+        &::after {
+            content: "\2713";
+            font-weight: 700;
+            position: absolute;
+            left: 2px;
+            top: 1px;
+        }
+    }
+    &__input {
+        &:checked + span {
+            color: var(--color-dark);
+            &::before {
+                border-color: var(--color-dark);
+            }
+        }
+    }
+}

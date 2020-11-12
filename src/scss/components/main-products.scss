@@ -18,42 +18,40 @@
     &__btn {
         color: var(--color-sub);
 
-        &:hover{
+        &:hover {
             color: var(--color-dark);
         }
 
-        &--current{
+        &--current {
             color: var(--color-dark);
 
-            &::before{
+            &::before {
                 opacity: 1;
                 transition: opacity 0.15s;
-             }
+            }
         }
     }
 }
 
-.products-grid{
+.products-grid {
     display: flex;
     flex-wrap: wrap;
 
-    &__item{
+    &__item {
         margin-right: 30px;
         margin-bottom: 80px;
 
-
-        &:nth-child(5n){
+        &:nth-child(5n) {
             margin-right: 0;
         }
 
-        &:nth-last-child(-n+5){
+        &:nth-last-child(-n + 5) {
             margin-bottom: 0;
         }
     }
 }
 
 .main-products {
-
     &__btn-center {
         text-align: center;
     }
@@ -66,7 +64,7 @@
         font-size: 13px;
         margin-top: 45px;
 
-        svg{
+        svg {
             display: inline-block;
             margin-top: 14px;
             height: 21px;
@@ -75,4 +73,3 @@
         }
     }
 }
-
