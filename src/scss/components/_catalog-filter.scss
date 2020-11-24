@@ -2,6 +2,12 @@
     width: 309px;
     padding-top: 35px;
     padding-right: 66px;
+    margin-right: 30px;
+}
+.catalog-content {
+    .container {
+        display: flex;
+    }
 }
 .hide-filters {
     margin-bottom: 19px;
@@ -15,13 +21,15 @@
 }
 .catalog-filter {
     padding-top: 29px;
-    padding-bottom: 40px;
+
     border-top: 1px solid #eee;
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 35px;
+        cursor: pointer;
+        user-select: none;
     }
 
     &__caption {
@@ -69,15 +77,23 @@
             transform: translateY(-50%);
         }
     }
-    &__bottom {
-        display: none;
-        &--open {
+    &--open {
+        .catalog-filter__bottom {
             display: block;
         }
+        .catalog-filter__toggle {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    &__bottom {
+        display: none;
     }
 
     &__items {
         columns: 2;
+        padding-bottom: 40px;
     }
 
     &__item {
@@ -122,5 +138,91 @@
                 border-color: var(--color-dark);
             }
         }
+    }
+}
+
+.catalog-grid {
+    width: 987px;
+    padding-top: 34px;
+
+    &__props {
+    }
+}
+.catalog-props {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__columns {
+    }
+}
+.catalog-columns {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &__text {
+        margin-right: 8px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    &__item {
+    }
+
+    &__btn {
+        font-size: 10px;
+        color: var(--color-sub);
+
+        &:hover {
+            color: var(--color-dark);
+        }
+
+        &--current {
+            color: var(--color-dark);
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 2px;
+                width: 22px;
+                background-color: var(--color-dark);
+            }
+        }
+    }
+}
+.catalog-props {
+    &__choice {
+    }
+}
+.catalog-choice {
+    &__item {
+        color: var(--color-sub);
+        font-size: 13px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        padding: 4px 15px;
+
+        svg {
+            fill: currentColor;
+        }
+    }
+
+    &__clear {
+        font-size: 13px;
+        margin-left: 10px;
+        border-bottom: 1px solid var(--color-dark);
     }
 }
