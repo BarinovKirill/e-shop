@@ -147,6 +147,31 @@
 
     &__props {
     }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 60px;
+    }
+
+    [data-grid-column="5"] {
+        .catalog-grid__item {
+            width: 17.569%;
+        }
+    }
+
+    [data-grid-column="4"] {
+        .catalog-grid__item {
+            width: 22.721%;
+        }
+    }
+
+    [data-grid-column="3"] {
+        .catalog-grid__item {
+            width: 31.3%;
+        }
+    }
 }
 .catalog-props {
     &__top {
@@ -205,18 +230,35 @@
 }
 .catalog-props {
     &__choice {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
     }
 }
 .catalog-choice {
+    display: none;
+    margin-bottom: 20px;
+
     &__item {
         color: var(--color-sub);
         font-size: 13px;
         border-radius: 15px;
         background-color: #eeeeee;
         padding: 4px 15px;
+        transition: background-color 0.3s, color 0.3s;
+        margin-right: 5px;
+        margin-bottom: 130px;
 
         svg {
+            width: 8px;
+            height: 9px;
             fill: currentColor;
+            pointer-events: none;
+        }
+        &:hover {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            transition: background-color 0.3s, color 0.3s;
         }
     }
 
